@@ -1,0 +1,27 @@
+.manual{
+	break-inside:avoid-column;
+	box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin:20px auto;
+}
+
+.twitter{
+	break-inside:avoid-column;
+	box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin:20px auto;
+}
+
+.instagram{
+	break-inside:avoid-column;
+	box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin:20px auto;
+}
+
+#post_body{
+   column-count:3;
+}

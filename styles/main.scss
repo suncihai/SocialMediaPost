@@ -1,0 +1,91 @@
+$filter-height:70px;
+
+*{
+   margin:0 auto;
+   padding:0;
+}
+
+#filter{
+	height:$filter-height;
+	.filters{
+		font-size:24px;
+		width:33.33%;
+		height:$filter-height;
+		float:left;
+		p{   
+			margin-top:20px;
+			text-align: center;
+		}
+	}
+	#manual_filter{
+		background: red;
+		border-radius: 10px;
+		box-shadow: 0 0 10px #ccc;
+		&:hover{
+			cursor:pointer;
+		}
+	}
+	#twitter_filter{
+		background: yellow;
+		border-radius: 10px;
+		box-shadow: 0 0 10px #ccc;
+	    &:hover{
+			cursor:pointer;
+		}
+	}
+	#instagram_filter{
+		background: gray;
+		border-radius: 10px;
+		box-shadow: 0 0 10px #ccc;
+	    &:hover{
+			cursor:pointer;
+		}
+	}
+}
+
+.manual_name{
+	margin:20px 0 20px 0;
+}
+
+.manual_text{
+	margin:20px 0 20px 0;
+}
+
+.manual_linktext{
+	margin:20px 0 20px 0;
+	text-decoration:none;
+	color:red;
+}
+
+.twitter_name{
+    margin:20px 0 20px 0;
+}
+
+.twitter_username{
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.instagram_name{
+	margin:20px 0 20px 0;
+}
+
+.instagram_username{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.instagram_caption{
+	padding-right:40px;
+}
+
+.twitter_tweet{
+    padding:0 50px 100px 50px;
+}
+
+.tag{
+	border-radius:10px;
+}
+
+
