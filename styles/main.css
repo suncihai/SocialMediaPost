@@ -11,6 +11,8 @@
     height: 70px;
     float: left; }
     #filter .filters p {
+      color: white;
+      font-family: customfont;
       margin-top: 20px;
       text-align: center; }
   #filter #manual_filter {
@@ -20,13 +22,13 @@
     #filter #manual_filter:hover {
       cursor: pointer; }
   #filter #twitter_filter {
-    background: yellow;
+    background: #33ccff;
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc; }
     #filter #twitter_filter:hover {
       cursor: pointer; }
   #filter #instagram_filter {
-    background: gray;
+    background: #9b614d;
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc; }
     #filter #instagram_filter:hover {
@@ -89,5 +91,9 @@
   position: relative;
   width: 1400px;
   height: auto; }
+
+@font-face {
+  font-family: customfont;
+  src: url(font/College%20Block.otf); }
 
 /*# sourceMappingURL=main.css.map */

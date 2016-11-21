@@ -3,7 +3,7 @@
 	box-shadow: 0 0 10px #ccc;
     border-radius: 10px;
     padding: 10px;
-    margin:20px auto;
+    margin:20px 20px;
 }
 
 .twitter{
@@ -11,7 +11,7 @@
 	box-shadow: 0 0 10px #ccc;
     border-radius: 10px;
     padding: 10px;
-    margin:20px auto;
+    margin:20px 20px;
 }
 
 .instagram{
@@ -19,5 +19,5 @@
 	box-shadow: 0 0 10px #ccc;
     border-radius: 10px;
     padding: 10px;
-    margin:20px auto;
+    margin:20px 20px;
 }
