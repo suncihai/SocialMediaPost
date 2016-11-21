@@ -5,8 +5,9 @@
 #filter {
   height: 70px; }
   #filter .filters {
+    margin-left: 1%;
     font-size: 24px;
-    width: 33.33%;
+    width: 32%;
     height: 70px;
     float: left; }
     #filter .filters p {
@@ -79,5 +80,14 @@
     font-size: 25px;
     text-align: center;
     padding-top: 15px; }
+
+#bubble_dummylayer {
+  position: absolute;
+  z-index: 100; }
+
+#bubble_layer {
+  position: relative;
+  width: 1400px;
+  height: auto; }
 
 /*# sourceMappingURL=main.css.map */

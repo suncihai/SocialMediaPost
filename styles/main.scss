@@ -8,8 +8,9 @@ $filter-height:70px;
 #filter{
 	height:$filter-height;
 	.filters{
+		margin-left:1%;
 		font-size:24px;
-		width:33.33%;
+		width:32%;
 		height:$filter-height;
 		float:left;
 		p{   
@@ -103,5 +104,16 @@ $filter-height:70px;
 		text-align: center;
 		padding-top:15px;
 	}
+}
+
+#bubble_dummylayer{
+	position: absolute;
+	z-index:100;
+}
+
+#bubble_layer{
+	position: relative;
+	width:1400px;
+	height:auto;
 }
 
