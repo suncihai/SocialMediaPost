@@ -79,7 +79,11 @@ window.onload=function(){
        return arr.join("");
     }
 
-	for(var i=0;i<20;i++){
+	for(var i=0;i<10;i++){
+		generatepost(i);
+	}
+
+	function generatepost(i){
 		var newpostdiv = document.createElement('div');
 		newpostdiv.style.border="1px solid #ccc";
 		switch(postArray[i].type){
@@ -172,6 +176,13 @@ window.onload=function(){
 			   break;
 		} 
 	}
+
+	$("#readmore").click(function(){
+	    for(var i=10;i<20;i++){
+		   generatepost(i);
+	    }
+	    $("#readmore").css("display","none");
+	});
 
 	$("#manual_filter").click(function(){
 		$(".manual").css("display","block");

@@ -66,4 +66,18 @@
 .tag {
   border-radius: 10px; }
 
+#readmore {
+  width: 200px;
+  height: 70px;
+  background: gray;
+  margin: 20px auto;
+  border-radius: 10px; }
+  #readmore:hover {
+    cursor: pointer; }
+  #readmore p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 15px; }
+
 /*# sourceMappingURL=main.css.map */
