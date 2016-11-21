@@ -5,6 +5,7 @@ window.onload=function(){
 	var postArray = $.makeArray();
 	var postbody=document.getElementById("post_body");
 	
+	//get data from json files
 	$.ajaxSetup({
 		async:false
 	})
@@ -78,11 +79,13 @@ window.onload=function(){
 
        return arr.join("");
     }
-
+     
+    //first load 10 items
 	for(var i=0;i<10;i++){
 		generatepost(i);
 	}
-
+    
+    //generate the post box
 	function generatepost(i){
 		var newpostdiv = document.createElement('div');
 		newpostdiv.style.border="1px solid #ccc";
@@ -116,7 +119,7 @@ window.onload=function(){
 			   newpostdiv.appendChild(newimage);
 			   newpostdiv.appendChild(newtext);
 			   newpostdiv.appendChild(newlinktext);
-			   newpostdiv.setAttribute("class","manual");
+			   newpostdiv.setAttribute("class","postbox manual");
 			   postbody.appendChild(newpostdiv);
 			   break;
 			case "twitter":
@@ -139,7 +142,7 @@ window.onload=function(){
 			   newpostdiv.appendChild(newname);
 			   newpostdiv.appendChild(newusername);
 			   newpostdiv.appendChild(newtweet);
-			   newpostdiv.setAttribute("class","twitter");
+			   newpostdiv.setAttribute("class","postbox twitter");
 			   postbody.appendChild(newpostdiv);
 			   break;
 			case "instagram":
@@ -169,21 +172,25 @@ window.onload=function(){
 			   newpostdiv.appendChild(newimage);
 			   newpostdiv.appendChild(newusername);
 			   newpostdiv.appendChild(newcaption);
-			   newpostdiv.setAttribute("class","instagram");
+			   newpostdiv.setAttribute("class","postbox instagram");
 			   postbody.appendChild(newpostdiv);
 			   break;
 			default:
 			   break;
 		} 
 	}
-
+    
+    //readmore 
 	$("#readmore").click(function(){
 	    for(var i=10;i<20;i++){
 		   generatepost(i);
 	    }
 	    $("#readmore").css("display","none");
-	});
 
+	    emphasis();
+	});
+    
+    //filter
 	$("#manual_filter").click(function(){
 		$(".manual").css("display","block");
 		$(".twitter").css("display","none");
@@ -201,4 +208,17 @@ window.onload=function(){
 		$(".twitter").css("display","none");
 		$(".instagram").css("display","block");
 	});
+
+	//emphasis hover
+	var emphasis = function(){
+		$('.postbox').hover(function(){
+			$(this).css("opacity","0.7");
+			$(this).css("background","#ccc");
+		},function(){
+			$(this).css("opacity","1.0");
+			$(this).css("background","white");
+		});
+	}
+
+	emphasis();
 }

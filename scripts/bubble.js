@@ -1,5 +1,5 @@
 setInterval(function(){
-	var bubblerandomleft=Math.ceil(Math.random()*1200);
+	var bubblerandomleft=Math.ceil(Math.random()*(window.innerWidth-100));
 	   var BubbleDiv=document.getElementById('bubble_layer');
 	   var newDiv2=document.createElement('div');
 	   var newImg2=document.createElement('img');

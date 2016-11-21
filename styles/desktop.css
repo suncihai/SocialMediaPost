@@ -1,24 +1,31 @@
 .manual{
 	break-inside:avoid-column;
     border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
     padding: 10px;
-    margin:20px auto;
+    margin:10px auto;
+    display: inline-block;
 }
 
 .twitter{
 	break-inside:avoid-column;
     border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
     padding: 10px;
-    margin:20px auto;
+    margin:10px auto;
+    display: inline-block;
 }
 
 .instagram{
 	break-inside:avoid-column;
     border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
     padding: 10px;
-    margin:20px auto;
+    margin:10px auto;
+    display: inline-block;
 }
 
 #post_body{
+   border:1px solid white;
    column-count:3;
 }
